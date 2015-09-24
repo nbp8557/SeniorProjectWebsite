@@ -38,12 +38,13 @@ group :development, :test do
   gem 'sqlite3'
 end
 
-group :development do
+group :production do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'pg'
+  gem 'rails_12factor', '0.0.3'
 end
 
