@@ -1,0 +1,34 @@
+<% requirements_doc = 'https://docs.google.com/document/d/1tkWsdiJ0-D-GQ8XlwAJhftq-I2GJimSDUbXEScuzSBM'%>
+<% requirements = requirements_doc + '/preview' %>
+<% project_plan_doc = 'https://docs.google.com/document/d/1A1JVZsR_4o5NHxvbnFbwi2OYC0Q-w1k9oQuj_EiMDbw' %>
+<% project_plan = project_plan_doc + '/preview' %>
+
+<div class="container">
+
+  <!-------->
+  <div id="content">
+    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+      <li class="active"><a href="#requirements" data-toggle="tab">Requirements</a></li>
+      <li><a href="#project_plan" data-toggle="tab">Project Plan</a></li>
+    </ul>
+    <div id="my-tab-content" class="tab-content">
+      <div class="tab-pane active" id="requirements">
+        <h1 id='requirements' style="text-align: center">Requirements</h1>
+        <iframe src="<%= requirements %>" frameborder="no" height="750" scrolling="no" width="100%"></iframe>
+        <p>If you can't read the above document then <a href="<%= requirements_doc %>">Click here to view the document</a></p>
+      </div>
+      <div class="tab-pane" id="project_plan">
+        <h1 id='project_plan' style="text-align: center">Project Plan</h1>
+        <iframe src="<%= project_plan %>" frameborder="no" height="750" scrolling="no" width="100%"></iframe>
+        <p>If you can't read the above document then <a href="<%= project_plan_doc %>">Click here to view the document</a></p>
+      </div>
+    </div>
+  </div>
+</div> <!-- container -->
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#tabs').tab();
+    });
+</script>
