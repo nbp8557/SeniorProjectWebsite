@@ -2,6 +2,8 @@
 <% requirements = requirements_doc + '/preview' %>
 <% project_plan_doc = 'https://docs.google.com/document/d/1A1JVZsR_4o5NHxvbnFbwi2OYC0Q-w1k9oQuj_EiMDbw' %>
 <% project_plan = project_plan_doc + '/preview' %>
+<% design_doc = 'https://docs.google.com/document/d/1zVXu1y9t5EhN1UtV0ryYZGCdX7dwa4qICn7sb6ZEfOo' %>
+<% design = design_doc + '/preview' %>
 
 <div class="container">
 
@@ -10,6 +12,7 @@
     <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
       <li class="active"><a href="#requirements" data-toggle="tab">Requirements</a></li>
       <li><a href="#project_plan" data-toggle="tab">Project Plan</a></li>
+      <li><a href="#design" data-toggle="tab">Design Doc</a></li>
     </ul>
     <div id="my-tab-content" class="tab-content">
       <div class="tab-pane active" id="requirements">
@@ -21,6 +24,11 @@
         <h1 id='project_plan' style="text-align: center">Project Plan</h1>
         <iframe src="<%= project_plan %>" frameborder="no" height="750" scrolling="no" width="100%"></iframe>
         <p>If you can't read the above document then <a href="<%= project_plan_doc %>">Click here to view the document</a></p>
+      </div>
+      <div class="tab-pane" id="design">
+        <h1 id='design' style="text-align: center">Design Document</h1>
+        <iframe src="<%= design %>" frameborder="no" height="750" scrolling="no" width="100%"></iframe>
+        <p>If you can't read the above document then <a href="<%= design_doc %>">Click here to view the document</a></p>
       </div>
     </div>
   </div>
