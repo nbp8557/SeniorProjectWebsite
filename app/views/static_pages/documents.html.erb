@@ -4,6 +4,9 @@
 <% project_plan = project_plan_doc + '/preview' %>
 <% design_doc = 'https://docs.google.com/document/d/1zVXu1y9t5EhN1UtV0ryYZGCdX7dwa4qICn7sb6ZEfOo' %>
 <% design = design_doc + '/preview' %>
+<% time_doc = 'https://docs.google.com/spreadsheets/d/1zRZCuu339UHmQDWst_X8IbNovQZCtNaxucidcQ5itmI' %>
+<% time = time_doc + '/preview' %>
+
 
 <div class="container">
 
@@ -13,6 +16,7 @@
       <li class="active"><a href="#requirements" data-toggle="tab">Requirements</a></li>
       <li><a href="#project_plan" data-toggle="tab">Project Plan</a></li>
       <li><a href="#design" data-toggle="tab">Design Doc</a></li>
+      <li><a href="#time" data-toggle="tab">Time Tracking</a></li>
     </ul>
     <div id="my-tab-content" class="tab-content">
       <div class="tab-pane active" id="requirements">
@@ -29,6 +33,11 @@
         <h1 id='design' style="text-align: center">Design Document</h1>
         <iframe src="<%= design %>" frameborder="no" height="750" scrolling="no" width="100%"></iframe>
         <p>If you can't read the above document then <a href="<%= design_doc %>">Click here to view the document</a></p>
+      </div>
+      <div class="tab-pane" id="time">
+        <h1 id='time' style="text-align: center">Time Tracking</h1>
+        <iframe src="<%= time %>" frameborder="no" height="750" scrolling="no" width="100%"></iframe>
+        <p>If you can't read the above document then <a href="<%= time_doc %>">Click here to view the document</a></p>
       </div>
     </div>
   </div>
